@@ -167,3 +167,142 @@ object-fit: cover;
               object-fit: cover;
              }
 }
+
+
+// Categories
+
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 180px;
+}
+
+.categories__head {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 80px;
+}
+.categories__heading {
+  font-weight: 600;
+font-size: 48px;
+
+color:$primaryColor;
+}
+.btn-categories{
+  padding: 20px 27px;
+  background-color:$bg-card;
+  font-weight: 600;
+  border-radius:16px;
+  border: none;
+}
+.categories__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 36px;
+}
+.categories__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 40px;
+  width: 180px;
+ border-radius:30px;
+
+      img{
+        margin-bottom: 50px;
+      }
+
+      &:nth-child(1){
+        background-image:linear-gradient(
+          to bottom,
+          rgb(112, 130, 70,0.1) 50%,
+          #c8d4ab
+        );
+      }
+      &:nth-child(2){
+        background-image:linear-gradient(
+           to bottom,
+           rgb(108, 198, 63,0.1) 50%,
+           #cde0c3
+        );
+
+        img{
+          position: relative;
+          top: 20px;
+          left: 10px;
+        }
+      }
+
+       &:nth-child(3){
+            background-image:linear-gradient(
+               rgb(204, 38, 27,0.1) 50%,
+               rgb(204, 38, 27,0.4),
+            )
+       }
+       &:nth-child(4){
+            background-image:linear-gradient(
+              rgb(240, 158, 0,0.1) 50%,
+           rgb(240, 158, 0,0.4)
+            )
+       }
+       &:nth-child(5){
+            background-image:linear-gradient(
+            rgb(0, 0, 0,0.2) 50%,
+      rgb(0, 0, 0,0.4)
+            )
+       }
+       &:nth-child(6){
+            background-image:linear-gradient(
+            rgb(0, 0, 0,0.2) 50%,
+      rgb(0, 0, 0,0.6)
+            )
+       }
+}
+
+  .categories__item:nth-child(odd){
+            animation-name:card-item;
+            animation-duration:3s;
+            animation-delay:2s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            animation-timing-function:linear;
+               perspective: 1200px;
+               transform-origin: top center;
+          @keyframes card-item {
+               from{
+                   transform: translateY(0);
+               }
+
+               to{
+                    transform:  translateY(-50px);
+               }
+          }
+        }
+  .categories__item:nth-child(even){
+            animation-name:card-item-even;
+            animation-duration:3s;
+            animation-delay:2s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+            animation-timing-function:linear;
+               perspective: 1200px;
+               transform-origin: top center;
+          @keyframes card-item-even{
+               from{
+                   transform: translateY(0);
+               }
+
+               to{
+                    transform:translateY(50px);
+               }
+          }
+  }
+
+
+.card-info {
+
+}
