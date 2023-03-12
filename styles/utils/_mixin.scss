@@ -1,0 +1,9 @@
+@mixin img-bf($img,$wh:24px,$hg:24px){
+  display: inline-block;
+  content: " ";
+  width: $wh;
+  height: $hg;
+  background-image: $img;
+   background-repeat: no-repeat;
+   background-size: cover;
+}

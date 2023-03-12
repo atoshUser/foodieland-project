@@ -1,0 +1,169 @@
+
+.hero {
+  display: flex;
+  border-radius: 28px;
+   position: relative;
+   margin-bottom: 155px;
+}
+
+.hero__info {
+  display: flex;
+  flex-direction: column;
+  padding: 45px 50px 60px;
+  background-color:$bg-card;
+  position: absolute;
+  z-index: 2;
+  width: 620px;
+  border-start-start-radius: 25px;
+  border-end-start-radius: 25px;
+  height: 100%;
+}
+.wrapper-recipes {
+  display: flex;
+ width: 170px;
+  justify-content: center;
+  align-items:center;
+  padding: 10px 20px;
+  background-color:#fff;
+  border-radius: 30px;
+  text-align: center;
+  gap: 12px;
+  white-space: nowrap;
+  margin-bottom: 32px;
+      &::before{
+
+          @include img-bf($img:url(/assets/img/recipes-list.png))
+        }
+}
+.hero__heading {
+  font-weight: 600;
+  font-size: 64px;
+  color:$primaryColor;
+  line-height: 77px;
+  letter-spacing: -4px;
+  margin: 0 0 24px 0;
+}
+.hero__text {
+margin-bottom: 30px;
+color:rgb(0, 0, 0,0.6);
+}
+.box {
+  display: flex;
+  align-items:center;
+  gap: 16px;
+margin-bottom: 104px;
+    span{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 16px;
+      background-color:rgba(0, 0, 0, 0.128);
+      border-radius:30px;
+      gap: 10px;
+    }
+}
+.box__time {
+
+      &::before{
+        @include img-bf($img:url(/assets/icons/Timer.svg));
+      }
+
+}
+.box__order {
+
+  &::before{
+    @include img-bf($img:url(/assets/icons/icon-ForkKnife.svg));
+  }
+}
+.author {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.author__box {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.author__img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.author__info {
+  display: flex;
+  flex-direction: column;
+}
+.author__name {
+  font-weight: 700;
+  color:$primaryColor;
+}
+.author__date {
+}
+.hero-img {
+position: relative;
+right: -25%;
+border-start-end-radius: 25px;
+border-end-end-radius: 25px;
+}
+
+.view{
+  display: flex;
+  align-items: center;
+  width: 220px;
+  padding: 22px 36px;
+  background-color: $primaryColor;
+  border-radius:16px;
+  color:#fff;
+  gap: 15px;
+
+    &::after{
+      @include img-bf($img:url(/assets/icons/PlayCircle.svg));
+    }
+
+     &:hover{
+      box-shadow: 2px 2px 7px rgb(0, 0, 0,0.5);
+     }
+}
+
+
+
+
+.hand-box {
+  display: flex;
+  align-items:center;
+  z-index: 2;
+  position: absolute;
+   left: 660px;
+  top: 50px;
+}
+.badge-img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+}
+.hand-img {
+  position: absolute;
+  left:37px;
+  animation-name: hand-img;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+
+  @keyframes hand-img {
+
+      from {
+         transform: rotate(0deg);
+      }
+      to{
+         transform: rotate(60deg);
+      }
+  }
+             img{
+              width: 80px;
+               height: 80px;
+              object-fit: cover;
+             }
+}
