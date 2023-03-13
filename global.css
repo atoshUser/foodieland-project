@@ -351,6 +351,7 @@ header + hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 143px;
 }
 
 .features__heading {
@@ -475,6 +476,51 @@ header + hr {
 
 .card span {
   background-color: transparent;
+}
+
+.chef-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 160px;
+}
+
+.chef-box__left-side {
+  display: flex;
+  flex-direction: column;
+  padding-top: 170px;
+  padding-bottom: 70px;
+}
+
+.chef-box__heading {
+  font-weight: 600;
+  font-size: 48px;
+  color: #000;
+  margin-bottom: 24px;
+  line-height: 58px;
+}
+
+.chef-box__text {
+  margin-bottom: 72px;
+  line-height: 28px;
+}
+
+.btn {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 16px;
+  padding: 20px 24px;
+  border: 1px solid transparent;
+  transition: border 0.4s ease, background-color 0.4s ease, color 0.4s ease;
+}
+.btn:hover {
+  background-color: #fff;
+  border: 1px solid orange;
+  color: #000;
 }
 
 @font-face {
