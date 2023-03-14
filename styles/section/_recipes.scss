@@ -1,0 +1,99 @@
+.recipec {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 160px;
+}
+
+.recipes__head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.recipes__heading {
+  margin: 0;
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: -4px;
+  color:$primaryColor;
+  line-height: 58px;
+}
+.recipes__info {
+}
+.recipes__list {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+grid-auto-rows: 320px;
+gap: 40px;
+grid-auto-flow: dense;
+
+
+}
+
+.recipes__item{
+  display: flex;
+  flex-direction: column;
+
+        span{
+          margin: 0;
+
+        }
+
+        .card{
+
+          span{
+            padding: 0;
+          }
+        }
+}
+
+
+.inbox {
+ display: flex;
+justify-content:center ;
+align-items: center;
+ background-color: $bg-card;
+  border-radius: 60px;
+  padding: 80px 330px;
+  position: relative;
+
+    background-image: url(/assets/img/salad-fresh-img.png),
+    url(/assets/img/Photo-plate.png), url(/assets/img/img-plant.png);
+    background-repeat: no-repeat,no-repeat,no-repeat;
+     background-position: left bottom,right bottom, right 247px top 249px;
+}
+
+.form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+.inbox__heading {
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: -4px;
+  color:$primaryColor;
+margin-bottom: 24px;
+}
+.inbox__text {
+  margin-bottom: 64px;
+}
+.email-wrapper {
+  display: flex;
+  padding: 10px;
+  background-color:#fff;
+  border-radius:24px;
+
+      input{
+        border: none;
+           &:focus{
+            outline: none;
+           }
+           padding: 5px;
+      }
+}
+.btn {
+}
+.btn-form {
+}
