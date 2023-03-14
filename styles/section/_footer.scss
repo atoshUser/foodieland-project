@@ -1,0 +1,35 @@
+.site-footer{
+   p{
+margin-bottom: 48px;
+   }
+
+     hr{
+      height: 2px;
+      border:none;
+      background-color:rgb(0, 0, 0,0.1);
+      margin-bottom: 48px;
+     }
+
+     h3{
+
+
+        a{
+          text-decoration: none;
+          color:rgb(223, 78, 78);
+        }
+     }
+
+
+}
+.footer-link-box{
+  display: flex;
+  justify-content: flex-end;
+  gap: 338px;
+  padding: 20px;
+}
+
+.footer-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

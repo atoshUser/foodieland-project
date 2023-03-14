@@ -25,6 +25,22 @@
   white-space: nowrap;
 }
 
+.header__item {
+  position: relative;
+}
+.header__item::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: red;
+  width: 0%;
+  top: 25px;
+}
+.header__item:hover::before {
+  transition: width 0.5s ease;
+  width: 100%;
+}
+
 .header__link {
   display: flex;
   text-decoration: none;
@@ -106,7 +122,6 @@ header + hr {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-bottom: 104px;
 }
 .box span {
   display: flex;
@@ -142,6 +157,7 @@ header + hr {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .author__box {
@@ -351,7 +367,7 @@ header + hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 143px;
+  margin-bottom: 160px;
 }
 
 .features__heading {
@@ -618,6 +634,7 @@ header + hr {
   grid-auto-rows: 320px;
   gap: 40px;
   grid-auto-flow: dense;
+  margin-bottom: 160px;
 }
 
 .recipes__item {
@@ -676,6 +693,33 @@ header + hr {
 }
 .email-wrapper input:focus {
   outline: none;
+}
+
+.site-footer p {
+  margin-bottom: 48px;
+}
+.site-footer hr {
+  height: 2px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 48px;
+}
+.site-footer h3 a {
+  text-decoration: none;
+  color: rgb(223, 78, 78);
+}
+
+.footer-link-box {
+  display: flex;
+  justify-content: flex-end;
+  gap: 338px;
+  padding: 20px;
+}
+
+.footer-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @font-face {
